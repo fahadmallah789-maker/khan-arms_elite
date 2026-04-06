@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khan Arms Elite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    /* Header / Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c443f01?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.7);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3em;
+      color: #f44336;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease forwards;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 10px;
+    }
+    .btn:hover { transform: scale(1.05); background-color: #45a049; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero h1 { font-size: 2.2em; }
+      .hero p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Khan Arms Elite</h1>
+      <p>Premium Legal Defense Gear<br>
+         Trusted, Safe & Professional</p>
+      <a class="btn" href="https://wa.me/923402453130" target="_blank">Chat on WhatsApp</a>
+      <a class="btn" href="https://www.facebook.com" target="_blank">Visit Our Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Khan Arms Elite. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
